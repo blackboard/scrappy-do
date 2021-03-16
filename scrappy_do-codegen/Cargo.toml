@@ -1,0 +1,13 @@
+[package]
+name = "scrappy_do_codegen"
+version = "0.1.0"
+authors = ["Matt Belle <matt.belle@blackboard.com>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = {version = "1", features = ["visit-mut", "full"]}
+quote = "1"
+proc-macro2 = "1"
